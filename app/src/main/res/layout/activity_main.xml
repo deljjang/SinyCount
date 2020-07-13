@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<!--
+	<com.google.android.gms.ads.AdView
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ads:adUnitId="ca-app-pub-2974448175712096/9223994162"
+    ads:adSize="BANNER"/>
+-->
+	<Button
+	android:id="@+id/btn_reset"
+	android:layout_width="wrap_content"
+	android:layout_height="80dp"
+	android:gravity="center"
+	android:textSize="50dp"
+	android:textStyle="bold"
+	android:text="reset" />
+   
+	<Button
+	android:id="@+id/btn_minus"
+	android:layout_width="match_parent"
+	android:layout_height="80dp"
+	android:layout_toRightOf="@id/btn_reset"
+	android:layout_alignParentRight="true"
+	android:gravity="center" 
+	android:textSize="50dp"
+	android:textStyle="bold"
+	android:text="-" />
+	
+	<TextView  
+	android:id="@+id/lb_text"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_below="@id/btn_reset"
+	android:gravity="center" 
+	android:textSize="90dp"
+	android:textStyle="bold"   
+	android:text="0"/>
+
+	<Button
+	android:id="@+id/btn_plus"
+	android:layout_width="fill_parent"
+	android:layout_height="match_parent"
+	android:layout_below="@id/lb_text"
+	android:layout_alignParentBottom="true"
+	android:textSize="100dp"
+	android:textStyle="bold"
+	android:text="+"/>
+
+ 
+</RelativeLayout>
